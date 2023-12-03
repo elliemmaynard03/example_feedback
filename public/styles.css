@@ -1,0 +1,293 @@
+/* Structure */
+#main-header {
+    background-color: rgb(255, 214, 219);
+    margin-top: 0px;
+    padding-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-content {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-slide {
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    position:relative;
+    max-width: 90%;
+    width:900px;
+    height:200px;
+}
+
+#slides {
+    text-align: center;
+    margin: auto;
+    border-radius: 30px;
+    position:relative;
+    max-width: 90%;
+    width:200px;
+    height:150px;
+}
+
+.column {
+    padding-top: 0px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-bottom: 0px;
+    margin: 5px;
+    border-radius: 2px; 
+    background-color: white;
+    text-align:center;
+}
+.columnof2 {
+    padding:40px;
+    margin: auto;
+    border-radius: 2px; 
+    background-color: white;
+    text-align:center;
+}
+
+.columnof3 {
+    padding:80px;
+    margin: auto;
+    border-radius: 2px; 
+    background-color: white;
+    text-align:center;
+}
+
+
+.columnof4 {
+    padding:80px;
+    margin: auto;
+    border-radius: 2px; 
+    background-color: white;
+    text-align:center;
+}
+#home-heading {
+    padding: 15px;
+    color: white;
+    background-color: rgb(253, 175, 188);
+    text-align:center;
+}
+
+.heading {
+    padding: 15px;
+    margin: 5px;
+    background-color: rgb(253, 175, 188);
+    color: white;
+    border-radius: 15px;;
+}
+
+
+
+.feedback-heading {
+    padding: 25px;
+    margin-left: 50px;
+}
+#input {
+    text-align:left;
+}
+
+#submit-button {
+    margin: auto;
+}
+
+.json-results {
+    border-radius: 5px;
+    text-decoration:none;
+    color:white;
+    list-style-type: none;
+    padding: 2px;
+    background-color:rgb(253, 175, 188);
+}
+.all-feedback-results a {
+    border-radius: 5px;
+    text-decoration:none;
+    color:white;
+    list-style-type: none;
+    padding: 2px;
+    background-color:rgb(253, 175, 188);
+    text-align:center;
+    
+}
+.all-feedback-results a:hover {
+   color:rgb(251, 219, 224)
+}
+
+/*Typography*/
+
+#title {
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    color: white;
+}
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
+}
+
+.info-section {
+    background-color: rgb(253, 175, 188);
+    font-size: 30px;
+    flex: 1;
+    color: white;
+  }
+
+.info-section section {
+    padding: 0 10px;
+    margin: 0 10px;
+    flex: 1;
+  }
+  
+
+/*Form*/
+
+form {
+    margin: 0 2%;
+  }
+  
+  form label {
+    font-size: 0.75em;
+    display: block;
+  }
+  
+  form input:not([type="checkbox"]):not([type="radio"]),
+  form textarea,
+  form button,
+  select {
+    font-size: 0.75em;
+    width: 200px;
+    padding: 5px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 20px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  form textarea {
+    min-height: 200px;
+  }
+  
+  #form-raccoon p {
+    margin-bottom: 1%;
+  }
+  
+  #video {
+    display: block;
+    padding: 5px;
+    max-width: 100%;
+    width: 40%;
+    margin: 0 2%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+/* Navigations */
+#main-nav ul {
+    padding-left:0;
+}
+#main-nav li {
+    list-style-type: none;
+    padding: 15px;
+    background-color:rgb(253, 175, 188);
+    text-align:center;
+}
+
+
+#main-nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#main-nav a:hover {
+    color:rgb(251, 219, 224)
+}
+
+#links  {
+    border-radius: 15px;
+    text-decoration:none;
+    color:white;
+    list-style-type: none;
+    padding: 15px;
+    background-color:rgb(253, 175, 188);
+    text-align:center;
+}
+#links a {
+    
+    text-decoration:none;
+    color:white;
+    
+}
+
+#feedback-links  {
+    border-radius: 5px;
+    text-decoration:none;
+    color:white;
+    list-style-type: none;
+    padding: 2px;
+    background-color:rgb(253, 175, 188);
+    text-align:center;
+}
+
+/* Feedback*/
+.feedback {
+    background-color: rgb(253, 175, 188);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  
+  .feedback a {
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+  }
+
+    /* Larger Resolutions */
+@media (min-width: 900px) {
+
+    #hamburger {
+        display: none;
+    }
+
+    @media (min-width: 900px) {
+        .flex-container, 
+        #main-nav ul {
+            display:flex;
+        }
+        
+    
+        #main-nav li,
+        .column {
+            flex: 1;
+        }
+    
+    }
+}

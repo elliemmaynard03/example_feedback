@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SemesterProject</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header id="main-header">
+         <h1 id="title">Ellie Maynard's Store Front</h1>
+            <nav id="main-nav">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="'hide-small">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="clothing.html">Clothing</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="jewelry.html">Jewelry</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <div class="flex-container">
+                <section class="info-section columns">
+                    <section>
+                        <h4>Feedback</h4>
+                        <h4 class="all-feedback-results"><a href="feedback.html">Give Feedback</a></h4>
+                        <p>
+                            Let us know which clothes, products, and jewelry you liked best to have it featured on this week's homepage!
+                        </p>
+                  <section class="info-section">
+                    <h3>Contact Ellie</h3>
+                    <div class="columns">
+                      <form
+                        id="contact-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                      >
+                        <input
+                          type="hidden"
+                          name="access_key"
+                          value="9b9f6c24-86a3-430d-af63-f3f7e156a9f1"
+                        />
+              
+                        <p>
+                          <label for="name">Name:</label>
+                                  <input id="name" type="text" placeholder="first and last" name="name" required />
+                              </p>
+                              <p>
+                                  <label for="email">Email:</label>
+                                  <input id="email" type="email" name="email" required />
+                              </p>
+                              <p>
+                                  <label for="message">Message:</label>
+                                  <textarea id="message" name="message" required></textarea>
+                              </p>
+                              <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                              <input type="hidden" name="subject" value="Contact from Ellie's Store Front" />
+                              <input type="hidden" name="from_name" value="My Website" />
+              
+                              <p>
+                                  <button type="submit">Submit Form</button>
+                              </p>
+              
+                              <p id="result"></p>
+                          </form>
+                          </div>
+                      </section>
+                </section>
+            </div>
+            <script src="contactme.js"></script>
+            <script src="form.js"></script>
+            
+        </body>
+    </html>
