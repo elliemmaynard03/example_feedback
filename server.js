@@ -131,6 +131,7 @@ const feedbackSchema = new mongoose.Schema({
   brand: String,
   rating: String,
   reviews: [String],
+  img: String,
 });
 
 const Feedback = mongoose.model("Feedback", feedbackSchema);
@@ -159,6 +160,10 @@ app.post("/api/feedbacks", upload.single("img"), (req, res) => {
     reviews: req.body.reviews.split(","),
   });
 
+  if (req.file) {
+    feedback.img = "images/" + req.file.filename;
+  }
+
 
   createFeedback(feedback, res);
 });
@@ -186,6 +191,10 @@ const updateFeedback = async (req, res) => {
     rating: req.body.rating,
     reviews: req.body.reviews.split(","),
   };
+
+  if (req.file) {
+    fieldsToUpdate.img = "images/" + req.file.filename;
+  }
 
 
   const result = await Feedback.updateOne({ _id: req.params.id }, fieldsToUpdate);

@@ -10,7 +10,7 @@ const showFeedbacks = async() => {
     let feedbacks = await getFeedbacks();
     let feedbacksDiv = document.getElementById("feedback-list");
     feedbacksDiv.innerHTML = "";
-    feedbacks.forEach((country) => {
+    feedbacks.forEach((feedback) => {
         const section = document.createElement("section");
         section.classList.add("feedback");
         feedbacksDiv.append(section);
@@ -22,6 +22,10 @@ const showFeedbacks = async() => {
         const h3 = document.createElement("h3");
         h3.innerHTML = feedback.name;
         a.append(h3);
+
+        const img = document.createElement("img");
+        img.src = feedback.img;
+        section.append(img);
 
         a.onclick = (e) => {
             e.preventDefault();

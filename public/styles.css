@@ -107,13 +107,13 @@
     text-decoration:none;
     color:white;
     list-style-type: none;
-    padding: 2px;
-    background-color:rgb(253, 175, 188);
+    padding: 10px;
+    background-color:rgb(255, 214, 219);
     text-align:center;
     
 }
 .all-feedback-results a:hover {
-   color:rgb(251, 219, 224)
+   color:rgb(248, 178, 188)
 }
 
 /*Typography*/
