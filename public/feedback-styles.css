@@ -67,6 +67,14 @@ label {
     text-align: right;
 }
 
+#feedback-label {
+    color:white;
+}
+
+#feedback-details-label {
+    color:white;
+}
+
 
 /* Modal Dialog */
 
