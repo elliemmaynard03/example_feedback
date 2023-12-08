@@ -43,18 +43,18 @@
 
         <h3 id="add-edit-title">Feedback</h3>
         <form id="add-edit-feedback-form" method="post">
-            <input type="text" name="_id" value="-1" />
+            <input type="hidden" name="_id" value="-1" />
             <p>
                 <label for="name ">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" minlength="3" required />
             </p>
             <p>
                 <label for="brand">Brand:</label>
-                <input type="text" id="brand" name="brand" required />
+                <input type="text" id="brand" name="brand" minlength="3" required />
             </p>
             <p>
                 <label for="rating">Rating:</label>
-                <input type="text" id="rating" name="rating" required />
+                <input type="text" id="rating" name="rating" minlength="3" required />
             </p>
             <p>
                 <label for="img">Upload Image:</label>
